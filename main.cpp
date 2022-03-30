@@ -149,9 +149,12 @@ int main()
     dungroixoa();
     break;
     case 4 : 
-    cout<<"Nhap gia tri muon thay doi : ";
-    int x; 
+    int x;
+    do
+    {
+    cout<<"Nhap gia tri muon thay doi ( mot so lon hon 0 ) : "; 
     cin>>x;
+    } while (x <= 0);
     n.SetN(x);
     cout<<"Da thay doi gia tri!";
     dungroixoa();
